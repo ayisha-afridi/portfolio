@@ -4,17 +4,20 @@ const About = () => {
   const skills = [
     "Python",
     "Java",
+    "C",
+    "Assembly",
     "HTML",
     "CSS",
     "JavaScript",
     "React.js",
+    "Bash",
     "Tailwind CSS",
     "SQL",
   ];
 
   return (
-    <section className="py-2 sm:py-12">
-      <div className="max-w-7xl mx-auto px-8 sm:px-32">
+    <section className="sm:py-12">
+      <div className="max-w-7xl mx-auto px-8 sm:px-16">
         <h2
           id="about"
           className="text-3xl sm:text-4xl font-semibold py-2 mb-2 bg-gradient-to-l from-white to-gray-200 bg-clip-text text-transparent leading-relaxed"
