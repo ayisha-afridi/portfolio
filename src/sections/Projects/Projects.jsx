@@ -130,7 +130,7 @@ const projectsData = [
 const Projects = () => {
   return (
     <section className="py-12 sm:py-12">
-      <div className="max-w-7xl mx-auto px-8 sm:px-32">
+      <div className="max-w-7xl mx-auto px-8 sm:px-16">
         <h2
           id="projects"
           className="text-3xl sm:text-4xl font-semibold py-2 mb-4 bg-gradient-to-l from-white to-blue-100 bg-clip-text text-transparent leading-relaxed"
