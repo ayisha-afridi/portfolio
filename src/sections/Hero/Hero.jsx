@@ -11,7 +11,7 @@ const Hero = () => {
       id="home"
       className="min-h-screen flex flex-col justify-start px-6 md:px-12 text-center"
     >
-      <div className="container mx-auto flex flex-col items-center gap-6 pt-20 md:pt-32 lg:pt-28">
+      <div className="container mx-auto flex flex-col items-center gap-6 pt-64 md:pt-32 lg:pt-48">
         {/* Headline1 */}
         <h2 className="headline1 leading-tight max-w-4xl mx-auto font-semibold ">
           <span className="text-white text-[clamp(2rem,9vw,4.5rem)] lg:text-6xl block mb-4 md:mb-6">
