@@ -1,5 +1,5 @@
 import React from "react";
-import Resume from "/src/assets/AyishaAfridi_Resume2025.pdf";
+import Resume from "/src/assets/AyishaAfridi_Resume.pdf";
 import Navbar from "../Navbar/Navbar";
 
 const Header = () => {
