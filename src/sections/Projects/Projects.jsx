@@ -112,19 +112,29 @@ const projectsData = [
     images: ["/images/portfolio_home.png"],
   },
   {
-    title: "Responsive Gym Website",
-    description:
-      "A gym website that showcases different services and membership options for people in Saudi Arabia. The site includes registration and contact forms, as well as location information.",
-    technologies: ["HTML", "CSS", "JavaScript"],
-    images: ["/images/gym_home.png", "/images/gym_services.png"],
-  },
-  {
     title: "School Cafeteria Management System",
     description:
       "A back-end project that enables different users such as, students and administrative staff, to view, interact with, and manage a school's cafeteria menu.",
     technologies: ["Java"],
+    githubUrl: "https://github.com/ayisha-afridi/cafeteria-management-system",
     images: ["/images/javalogo2_free.png"],
   },
+  {
+    title: "Simple HTTPS Server",
+    description:
+      "A lightweight HTTPS server built using Python's socket and SSL libraries. Features TLS encryption, request handling, and inline comments explaining the fundamentals of HTTPS.",
+    technologies: ["Python"],
+    githubUrl: "https://github.com/ayisha-afridi/simple-https-server",
+    images: ["/images/httpsserver_pic.png"],
+  },
+  {
+    title: "Responsive Gym Website",
+    description:
+      "A responsive gym website that showcases different services and membership options for women in Saudi Arabia. The site includes registration for new members as well as contact forms.",
+    technologies: ["HTML", "CSS", "JavaScript"],
+    images: ["/images/gym_home.png", "/images/gym_services.png"],
+  },
+  
 ];
 
 const Projects = () => {
