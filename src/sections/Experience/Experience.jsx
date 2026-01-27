@@ -37,20 +37,10 @@ const Experience = () => {
 const education = [
     {
       degree: "Bachelor of Science in Computer Science",
-      isUniversity: true,
-      schools: [
-        {
-          name: "University of Calgary",
-          location: "Calgary, Canada",
-          duration: "September 2025 - Present",
-        },
-        {
-          name: "Prince Mohammad Bin Fahd University",
-          location: "Khobar, Saudi Arabia",
-          duration: "August 2023 - May 2025",
-        },
-      ],
-      gpa: "3.92",
+      school: "University of Calgary",
+      duration: "Exp. Grad: Dec 2027",
+      location: "Calgary, Canada",
+      gpa: "3.84",
       courses: [
         "Data Structures",
         "Algorithms",
@@ -59,7 +49,7 @@ const education = [
         "Computer Science I",
         "Computer Science II",
         "Mathematical Reasoning and Algorithmic Thinking",
-        "Database",
+        "Database Management Systems",
       ],
     },
     {
@@ -67,8 +57,6 @@ const education = [
       school: "Nelson Mandela High School & CBe-learn",
       duration: "Sep 2019 - Jun 2023",
       location: "Calgary, Canada",
-      isUniversity: false,
-      description: [],
       courses: [],
     },
   ];
@@ -135,82 +123,47 @@ const education = [
                   {edu.degree}
                 </h3>
 
-                {/* University Format (with multiple institutions) */}
-                {edu.isUniversity ? (
-                  <>
-                    {/* Schools List */}
-                    <div className="space-y-4 mb-8 sm:mb-8">
-                      {edu.schools.map((school, schoolIndex) => (
-                        <div key={schoolIndex} className="flex flex-col sm:flex-row sm:justify-between sm:items-start">
-                          <div className="flex-1">
-                            <p className="text-base sm:text-lg text-blue-200 group-hover:text-rose-300 transition-colors font-medium">
-                              {school.name}
-                            </p>
-                            <p className="text-sm sm:text-base text-gray-400">
-                              {school.location}
-                            </p>
-                          </div>
-                          <p className="text-sm sm:text-base text-gray-300 mt-1 sm:mt-0 sm:text-right">
-                            {school.duration}
-                          </p>
-                        </div>
+                {/* School Information */}
+                <div className="flex flex-col sm:flex-row justify-between items-start mb-2">
+                  <div className="mb-2 sm:mb-0">
+                    <p className="text-lg sm:text-xl text-blue-200 group-hover:text-rose-300 transition-colors">
+                      {edu.school}
+                    </p>
+                  </div>
+                  <div className="text-left sm:text-right w-full sm:w-auto">
+                    <p className="text-gray-300 text-base sm:text-lg">
+                      {edu.duration}
+                    </p>
+                    <p className="text-gray-400 text-base sm:text-lg">
+                      {edu.location}
+                    </p>
+                  </div>
+                </div>
+
+                {/* GPA */}
+                {edu.gpa && (
+                  <p className="text-sm sm:text-base text-gray-100 mb-2 mt-4">
+                    <span className="font-medium">GPA:</span> {edu.gpa}
+                  </p>
+                )}
+
+                {/* Relevant Coursework */}
+                {edu.courses && edu.courses.length > 0 && (
+                  <div className="mt-4">
+                    <p className="text-sm sm:text-base text-gray-100 font-medium mb-3">
+                      Relevant Coursework:
+                    </p>
+                    <div className="flex flex-wrap gap-2 sm:gap-3">
+                      {edu.courses.map((course, idx) => (
+                        <span
+                          key={idx}
+                          className="bg-slate-700/50 text-white px-2.5 py-1 rounded-full text-xs sm:text-sm hover:scale-[1.05] hover:bg-slate-700/45 hover:text-blue-300 transition-all"
+                        >
+                          {course}
+                        </span>
                       ))}
                     </div>
-
-                    {/* GPA */}
-                    {edu.gpa && (
-                      <p className="text-sm sm:text-base text-gray-100 mb-2">
-                        <span className="font-medium">GPA:</span> {edu.gpa}
-                      </p>
-                    )}
-
-                    {/* Relevant Coursework */}
-                    {edu.courses && edu.courses.length > 0 && (
-                      <div className="mt-3">
-                        <p className="text-sm sm:text-base text-gray-100 font-medium mb-4">
-                          Relevant Coursework:
-                        </p>
-                        <div className="flex flex-wrap gap-2 sm:gap-3">
-                          {edu.courses.map((course, idx) => (
-                            <span
-                              key={idx}
-                              className="bg-slate-700/50 text-white px-2.5 py-1 rounded-full text-xs sm:text-sm hover:scale-[1.05] hover:bg-slate-700/45 hover:text-blue-300 transition-all"
-                            >
-                              {course}
-                            </span>
-                          ))}
-                        </div>
-                      </div>
-                    )}
-                  </>
-                ) : (
-                  /* High School Format - Original Layout */
-                  <>
-                    <div className="flex flex-col sm:flex-row justify-between items-start mb-2">
-                      <div className="mb-2 sm:mb-0">
-                        <p className="text-lg sm:text-xl text-blue-200 group-hover:text-rose-300 transition-colors">
-                          {edu.school}
-                        </p>
-                      </div>
-                      <div className="text-left sm:text-right w-full sm:w-auto">
-                        <p className="text-gray-300 text-base sm:text-lg">
-                          {edu.duration}
-                        </p>
-                        <p className="text-gray-400 text-base sm:text-lg">
-                          {edu.location}
-                        </p>
-                      </div>
-                    </div>
-                    {edu.description && edu.description.length > 0 && (
-                      <ul className="text-gray-100 text-sm sm:text-base py-4 px-4 sm:px-6">
-                        {edu.description.map((desc, descIndex) => (
-                          <li key={descIndex} className="list-disc ml-4 sm:ml-6 py-1">
-                            {desc}
-                          </li>
-                        ))}
-                      </ul>
-                    )}
-                  </>
+                  </div>
                 )}
               </div>
             ))}
