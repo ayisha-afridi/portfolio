@@ -19,7 +19,7 @@ const Hero = () => {
           </span>
 
           <span className="text-[clamp(1.5rem,9vw,1.5rem)] lg:text-2xl block font-normal">
-            a computer science student passionate about exploring tech
+            a computer science student @ UCalgary passionate about exploring tech and learning new skills :)
           </span>
         </h2>
 
@@ -27,7 +27,7 @@ const Hero = () => {
           <span className="relative w-2.5 h-2.5 rounded-full bg-blue-200/75">
             <span className="absolute inset-0 rounded-full bg-blue-100 animate-ping"></span>
           </span>
-          <span>Available for work!</span>
+          <span>Looking forward to new projects!</span>
         </div>
         {/* Social Media Links */}
         <div className="flex gap-4 sm:gap-6 mt-4">
