@@ -1,5 +1,4 @@
 import React from "react";
-import Resume from "/src/assets/AyishaAfridi_Resume.pdf";
 import Navbar from "../Navbar/Navbar";
 
 const Header = () => {
@@ -26,14 +25,14 @@ const Header = () => {
           <Navbar mobile />
         </div>
 
-        {/* Resume Download */}
+        {/* Open Resume */}
         <div className="md:justify-self-end">
           <a
-            href={Resume}
+            href="/AyishaAfridi_Resume.pdf"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-block px-5 py-2.5 rounded-xl bg-zinc-800/80 hover:bg-zinc-700/80 text-blue-100 hover:text-white transition-all border border-zinc-700 hover:border-blue-200/30 text-sm font-medium shadow-sm"
-            aria-label="Download Resume"
+            aria-label="Open Resume"
           >
             Resume
           </a>
