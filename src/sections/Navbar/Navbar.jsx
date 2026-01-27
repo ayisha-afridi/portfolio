@@ -48,7 +48,7 @@ const Navbar = () => {
         </nav>
 
         <a
-          href="/src/assets/AyishaAfridi_Resume.pdf"
+          href="/AyishaAfridi_Resume.pdf"
           target="_blank"
           rel="noopener noreferrer"
           className="text-base bg-zinc-900/50 hover:bg-zinc-950 text-rose-200/80 hover:text-maroon-300/80 hover:underline px-4 py-2 rounded-2xl cursor-pointer"
@@ -123,7 +123,7 @@ const Navbar = () => {
 
                   {/* Resume Button */}
                   <a
-                    href="/src/assets/AyishaAfridi_Resume.pdf"
+                    href="/AyishaAfridi_Resume.pdf"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="text-base bg-maroon-300/75 hover:bg-maroon-500/90 text-white hover:underline px-6 py-3 rounded-full mt-10 cursor-pointer inline-block"
